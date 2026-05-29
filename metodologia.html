@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Metodología - Pycods</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    .fase {
+        width: 90%;
+        max-width: 800px;
+        margin: 25px auto;
+        background: #f0f8ff;
+        border-left: 5px solid #00ccff;
+        border-radius: 0 12px 12px 0;
+        padding: 20px 25px;
+    }
+    .fase h3 {
+        color: #00aacc;
+        margin-bottom: 8px;
+        font-size: 18px;
+    }
+    .fase p {
+        color: #555;
+        font-size: 15px;
+        line-height: 1.7;
+    }
+    .numero-fase {
+        display: inline-block;
+        background: linear-gradient(90deg, #00ccff, #07eeff);
+        color: white;
+        font-weight: bold;
+        font-size: 13px;
+        padding: 3px 12px;
+        border-radius: 20px;
+        margin-bottom: 8px;
+    }
+    .tabla-tech {
+        width: 90%;
+        max-width: 800px;
+        margin: 30px auto;
+        border-collapse: collapse;
+        font-size: 15px;
+    }
+    .tabla-tech th {
+        background: linear-gradient(90deg, #00ccff, #07eeff);
+        color: white;
+        padding: 12px 15px;
+        text-align: left;
+    }
+    .tabla-tech td {
+        padding: 11px 15px;
+        border-bottom: 1px solid #ddd;
+    }
+    .tabla-tech tr:nth-child(even) {
+        background: #f0f8ff;
+    }
+    .tabla-presupuesto {
+        width: 90%;
+        max-width: 800px;
+        margin: 30px auto;
+        border-collapse: collapse;
+        font-size: 15px;
+    }
+    .tabla-presupuesto th {
+        background: linear-gradient(90deg, #00ccff, #07eeff);
+        color: white;
+        padding: 12px 15px;
+        text-align: left;
+    }
+    .tabla-presupuesto td {
+        padding: 11px 15px;
+        border-bottom: 1px solid #ddd;
+    }
+    .tabla-presupuesto tr:nth-child(even) {
+        background: #f0f8ff;
+    }
+    .tabla-presupuesto tr:last-child td {
+        font-weight: bold;
+        background: #e3f2fd;
+    }
+</style>
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">Pycods</div>
+    <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="introduccion.html">Introducción</a>
+        <a href="ideainv.html">Idea</a>
+        <a href="objetivos.html">Objetivos</a>
+        <a href="problema.html">Problema</a>
+        <a href="socializacion.html">Socialización</a>
+        <a href="sobre.html">Sobre nosotros</a>
+        <a href="anexos.html">Anexos</a>
+    </nav>
+</header>
+
+<section class="contenido">
+    <h1>Metodología</h1>
+    <p style="max-width:700px; margin:15px auto; color:#555; font-size:15px; line-height:1.7;">
+        Pycods utiliza una investigación de tipo <strong>aplicada y descriptiva</strong>, con un enfoque <strong>mixto</strong> (cualitativo y cuantitativo), desarrollada bajo la metodología ágil <strong>Scrum</strong>. Esto permitió organizar el trabajo en fases con entregas progresivas, identificar errores fácilmente y agregar funcionalidades de forma ordenada.
+    </p>
+</section>
+
+<h2 style="text-align:center; color:#333; margin-top:10px;">Fases de Desarrollo</h2>
+
+<div class="fase">
+    <span class="numero-fase">Fase 1</span>
+    <h3>Planificación</h3>
+    <p>Se definió la arquitectura modular de Pycods, organizando el código en carpetas como <em>Core</em>, <em>Models</em> y <em>Widgets</em>. Se analizaron los requerimientos funcionales y no funcionales del sistema, identificando las necesidades de accesibilidad, gamificación e interacción para niños con TEA.</p>
+</div>
+
+<div class="fase">
+    <span class="numero-fase">Fase 2</span>
+    <h3>Desarrollo de Contenido</h3>
+    <p>Se desarrollaron los módulos de aprendizaje de Python con temas básicos: variables, <code>print()</code>, condicionales <code>if</code>, bucles <code>for</code> y listas. El contenido es visual e interactivo, adaptado para los niños con TEA. Se integraron ejercicios prácticos con retroalimentación automática para facilitar la comprensión y motivación.</p>
+</div>
+
+<div class="fase">
+    <span class="numero-fase">Fase 3</span>
+    <h3>Gamificación e Interfaz</h3>
+    <p>Se implementó el sistema de gamificación con monedas, logros y minijuegos educativos. La interfaz web fue diseñada con HTML, CSS y Bootstrap 5, usando JavaScript para animaciones e interacciones, con PHP como backend. Se utilizaron widgets reutilizables para optimizar la experiencia del usuario con adaptación visual.</p>
+</div>
+
+<div class="fase">
+    <span class="numero-fase">Fase 4</span>
+    <h3>Integración de Servicios</h3>
+    <p>Se integró PHP con MySQLi para la gestión segura de usuarios y autenticación mediante sesiones PHP. Se utilizó MySQL como base de datos relacional para almacenar el progreso de cada estudiante, monedas y avances dentro de la plataforma. La sincronización en tiempo real facilita la persistencia de datos y el seguimiento del proceso de aprendizaje.</p>
+</div>
+
+<h2 style="text-align:center; color:#333; margin: 35px 0 15px;">Herramientas Tecnológicas</h2>
+
+<table class="tabla-tech">
+    <thead>
+        <tr>
+            <th>Tecnología</th>
+            <th>Uso en Pycods</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>HTML5 / CSS3</td><td>Estructura y estilos de la interfaz visual</td></tr>
+        <tr><td>Bootstrap 5</td><td>Diseño adaptativo (responsive) para múltiples dispositivos</td></tr>
+        <tr><td>JavaScript</td><td>Interactividad, animaciones y gamificación en tiempo real</td></tr>
+        <tr><td>PHP 8+</td><td>Backend, lógica del servidor y autenticación</td></tr>
+        <tr><td>MySQL / MariaDB</td><td>Base de datos relacional para progreso y usuarios</td></tr>
+        <tr><td>Apache (XAMPP)</td><td>Servidor web local para pruebas</td></tr>
+        <tr><td>GitHub</td><td>Control de versiones distribuido del proyecto</td></tr>
+        <tr><td>Visual Studio Code</td><td>Editor de código principal</td></tr>
+        <tr><td>Render</td><td>Despliegue en la nube</td></tr>
+    </tbody>
+</table>
+
+<h2 style="text-align:center; color:#333; margin: 35px 0 15px;">Presupuesto del Proyecto</h2>
+
+<table class="tabla-presupuesto">
+    <thead>
+        <tr>
+            <th>Recurso</th>
+            <th>Tiempo empleado</th>
+            <th>Valor estimado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Planeación y análisis del sistema</td><td>30 horas</td><td>$300.000 COP</td></tr>
+        <tr><td>Diseño de interfaz adaptativa</td><td>40 horas</td><td>$400.000 COP</td></tr>
+        <tr><td>Desarrollo de módulos educativos</td><td>60 horas</td><td>$600.000 COP</td></tr>
+        <tr><td>Implementación de gamificación</td><td>35 horas</td><td>$350.000 COP</td></tr>
+        <tr><td>Diseño de minijuegos educativos</td><td>25 horas</td><td>$250.000 COP</td></tr>
+        <tr><td>Desarrollo web (HTML5/CSS3/JS/PHP/MySQL)</td><td>50 horas</td><td>$500.000 COP</td></tr>
+        <tr><td>Pruebas y validación del sistema</td><td>30 horas</td><td>$300.000 COP</td></tr>
+        <tr><td>TOTAL</td><td>270 horas aprox.</td><td>$2.700.000 COP</td></tr>
+    </tbody>
+</table>
+
+<br>
+
+</body>
+</html>

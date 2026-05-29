@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Diagramas - Pycods</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    .seccion-diagrama {
+        width: 90%;
+        max-width: 900px;
+        margin: 40px auto;
+    }
+    .seccion-diagrama h2 {
+        color: #00aacc;
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    .seccion-diagrama p {
+        color: #555;
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 15px;
+    }
+    .badge-version {
+        display: inline-block;
+        background: linear-gradient(90deg, #00ccff, #07eeff);
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 3px 13px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+    .img-diagrama {
+        display: block;
+        width: 100%;
+        max-width: 820px;
+        margin: 10px auto 0;
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        border: 1px solid #dde;
+    }
+    .separador {
+        width: 90%;
+        max-width: 900px;
+        margin: 10px auto;
+        border: none;
+        border-top: 2px solid #e3f2fd;
+    }
+    .grupo-version {
+        background: #f0f8ff;
+        border-radius: 15px;
+        padding: 25px 30px;
+        width: 90%;
+        max-width: 900px;
+        margin: 35px auto;
+    }
+    .grupo-version h3 {
+        color: #007799;
+        font-size: 17px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #00ccff;
+        padding-bottom: 8px;
+    }
+</style>
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">Pycods</div>
+    <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="introduccion.html">Introducción</a>
+        <a href="ideainv.html">Idea</a>
+        <a href="objetivos.html">Objetivos</a>
+        <a href="problema.html">Problema</a>
+        <a href="metodologia.html">Metodología</a>
+        <a href="socializacion.html">Socialización</a>
+        <a href="sobre.html">Sobre nosotros</a>
+        <a href="anexos.html">Anexos</a>
+    </nav>
+</header>
+
+<section class="contenido">
+    <h1>Diagramas del Sistema</h1>
+    <p style="max-width:700px; margin:15px auto; color:#555; font-size:15px; line-height:1.7;">
+        Los siguientes diagramas permiten visualizar la estructura, las funcionalidades y el flujo del sistema Pycods. Se presentan en dos versiones que reflejan la evolución del proyecto a lo largo del desarrollo.
+    </p>
+</section>
+
+<!-- DIAGRAMA DE CLASES -->
+<div class="grupo-version">
+    <h3>📐 Diagrama de Clases</h3>
+
+    <div class="seccion-diagrama" style="width:100%; margin: 0 0 30px 0;">
+        <span class="badge-version">Versión 2025-2 · Tercer Semestre</span>
+        <h2>Diagrama de Clases — v1</h2>
+        <p>
+            Muestra las clases principales del sistema en su primera versión: <strong>AppPycods</strong> como clase principal, <strong>Usuario</strong> con gestión de perfil y progreso, <strong>ModuloAprendizaje</strong>, <strong>Reto</strong>, <strong>Retroalimentación</strong> y <strong>Gamificación</strong>, con sus atributos y métodos correspondientes.
+        </p>
+        <img src="diagramaclasesv1.jpg" class="img-diagrama" alt="Diagrama de clases Pycods versión 2025-2">
+    </div>
+
+    <hr class="separador">
+
+    <div class="seccion-diagrama" style="width:100%; margin: 25px 0 0 0;">
+        <span class="badge-version">Versión 2026-1 · Cuarto Semestre</span>
+        <h2>Diagrama de Clases — v2 (HTML + PHP + MariaDB)</h2>
+        <p>
+            Versión ampliada con la integración del backend. Incluye clases como <strong>Usuario</strong>, <strong>Sesion</strong>, <strong>XP_Usuario</strong>, <strong>Ejercicio</strong>, <strong>Intento_Ejercicio</strong>, <strong>Recompensa</strong>, <strong>Juego_Memoria</strong>, <strong>Partida_Memoria</strong> y <strong>Mensaje</strong>, reflejando la arquitectura completa del sistema con MySQL/MariaDB.
+        </p>
+        <img src="diagramaclasesv2.jpg" class="img-diagrama" alt="Diagrama de clases Pycods versión 2026-1">
+    </div>
+</div>
+
+<!-- DIAGRAMA DE CASOS DE USO -->
+<div class="grupo-version">
+    <h3>👤 Diagrama de Casos de Uso</h3>
+
+    <div class="seccion-diagrama" style="width:100%; margin: 0 0 30px 0;">
+        <span class="badge-version">Versión 2025-2 · Tercer Semestre</span>
+        <h2>Casos de Uso — v1</h2>
+        <p>
+            Muestra las interacciones del <strong>Niño Usuario</strong> con el sistema: registrarse o iniciar sesión, seleccionar avatar, ver teoría y responder ejercicios, recibir retroalimentación, ganar monedas, comprar fichas y jugar minijuegos como el Monstruo Azul.
+        </p>
+        <img src="diagramacasosv1.jpg" class="img-diagrama" alt="Diagrama de casos de uso Pycods versión 2025-2">
+    </div>
+
+    <hr class="separador">
+
+    <div class="seccion-diagrama" style="width:100%; margin: 25px 0 0 0;">
+        <span class="badge-version">Versión 2026-1 · Cuarto Semestre</span>
+        <h2>Casos de Uso — v2</h2>
+        <p>
+            Versión ampliada con tres actores: <strong>Niño (TEA)</strong>, <strong>Padre/Docente</strong> y <strong>Administrador</strong>. El niño puede registrarse, acceder al dashboard, resolver ejercicios, recibir retroalimentación, ganar insignias y jugar minijuegos. El padre/docente puede ver la barra de progreso y el administrador gestiona estudiantes.
+        </p>
+        <img src="diagramausosv2.jpg" class="img-diagrama" alt="Diagrama de casos de uso Pycods versión 2026-1">
+    </div>
+</div>
+
+<!-- DIAGRAMA DE SECUENCIA -->
+<div class="grupo-version">
+    <h3>🔄 Diagrama de Secuencia UML</h3>
+
+    <div class="seccion-diagrama" style="width:100%; margin: 0;">
+        <span class="badge-version">Versión 2026-1 · HTML + PHP + MariaDB</span>
+        <h2>Diagrama de Secuencia UML</h2>
+        <p>
+            Muestra el flujo de interacción entre los componentes del sistema en dos escenarios clave: el <strong>inicio de sesión</strong> (validación de credenciales entre la interfaz web, el backend PHP y la base de datos) y la <strong>resolución de ejercicios</strong> (envío de respuesta, validación de lógica, actualización de XP y progreso, y visualización de recompensas).
+        </p>
+        <img src="diagramauml.jpg" class="img-diagrama" alt="Diagrama de secuencia UML Pycods">
+    </div>
+</div>
+
+<!-- DIAGRAMA ER -->
+<div class="grupo-version">
+    <h3>🗄️ Diagrama Entidad-Relación</h3>
+
+    <div class="seccion-diagrama" style="width:100%; margin: 0;">
+        <span class="badge-version">Base de Datos · MySQL / MariaDB</span>
+        <h2>Diagrama Entidad-Relación (phpMyAdmin)</h2>
+        <p>
+            Representa la estructura de la base de datos relacional de Pycods. Incluye las tablas: <strong>usuarios</strong>, <strong>progreso</strong>, <strong>ejercicios</strong>, <strong>logros</strong>, <strong>usuario_logros</strong>, <strong>recompensas</strong>, <strong>usuario_recompensas</strong> y <strong>monstruos</strong>, con sus respectivas relaciones y tipos de datos.
+        </p>
+        <img src="diagrama_er.png" class="img-diagrama" alt="Diagrama Entidad-Relación Pycods phpMyAdmin">
+    </div>
+</div>
+
+<br>
+
+</body>
+</html>
