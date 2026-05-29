@@ -12,7 +12,9 @@
     display:flex;
     align-items:center;
     justify-content:space-between;
-    padding:15px 40px;
+    padding:12px 25px;
+    flex-wrap:wrap;
+    gap:8px;
 }
 
 .logo{
@@ -23,8 +25,10 @@
 .menu a{
     color:white;
     text-decoration:none;
-    margin:0 15px;
+    margin:0 8px;
     font-weight:600;
+    font-size:13px;
+    white-space:nowrap;
 }
 
 .menu a:hover{
